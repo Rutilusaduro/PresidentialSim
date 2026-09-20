@@ -19,10 +19,11 @@ Open `http://localhost:8080`.
 
 ## GitHub Pages
 
-1. In repo **Settings → Pages**, set source to **GitHub Actions** (workflow included).
-2. Push to `main`; the workflow deploys the repository root.
+The **Deploy GitHub Pages** workflow on `main` uploads the repo root and enables Pages automatically (`enablement: true`).
 
-Or use **Pages from branch** and point at `/` on `main` if you prefer not to use Actions.
+Live URL (project site): **https://rutilusaduro.github.io/PresidentialSim/**
+
+If deploy fails, open **Settings → Pages** and confirm **Build and deployment** is set to **GitHub Actions**.
 
 ## Disclaimer
 
