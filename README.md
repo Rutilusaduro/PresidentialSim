@@ -19,11 +19,14 @@ Open `http://localhost:8080`.
 
 ## GitHub Pages
 
-The **Deploy GitHub Pages** workflow on `main` uploads the repo root and enables Pages automatically (`enablement: true`).
+1. **Settings → Pages → Build and deployment**
+2. Source: **Deploy from a branch**
+3. Branch: **`gh-pages`** / **`/(root)`**
+4. Save. After the next push to `main`, the workflow publishes the site to `gh-pages`.
 
-Live URL (project site): **https://rutilusaduro.github.io/PresidentialSim/**
+Live URL: **https://rutilusaduro.github.io/PresidentialSim/**
 
-If deploy fails, open **Settings → Pages** and confirm **Build and deployment** is set to **GitHub Actions**.
+The `index.html` base-url script fixes CSS/JS paths on project Pages URLs.
 
 ## Disclaimer
 
