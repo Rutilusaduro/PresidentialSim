@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Curves in the Oval</title>
+  <meta name="description" content="A real-time presidential simulator about making America softer, rounder, and happier." />
+  <script>
+    // Project Pages URLs without a trailing slash break relative paths.
+    (function () {
+      if (!location.hostname.endsWith("github.io")) return;
+      var parts = location.pathname.split("/").filter(Boolean);
+      if (!parts.length) return;
+      var base = document.createElement("base");
+      base.href = "/" + parts[0] + "/";
+      document.head.appendChild(base);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍰</text></svg>" />
+</head>
+<body>
+  <header id="hud" class="hud" hidden></header>
+  <div class="shell">
+    <nav id="nav" class="nav" hidden></nav>
+    <main id="view" class="view"></main>
+  </div>
+  <div id="modal" class="modal" hidden></div>
+  <div id="toasts" class="toasts"></div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
